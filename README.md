@@ -1,5 +1,22 @@
 # Wakeuptimes
 
+Frontend for the wakUpTime project
+
+## What
+* Ability to choose/create/modify custom lists, which hold the times to wake up for each day of the week
+* Compatible for mobile and desktop browsers
+
+
+## Goals
+easy and intuitive frontend
+
+## Other
+This readme may be updated later on . . .
+
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ## Development server
