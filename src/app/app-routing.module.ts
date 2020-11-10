@@ -6,10 +6,16 @@ import {WakeupShowPresetsComponent} from './wakeup-show-presets/wakeup-show-pres
 import {WakeupShowSingleComponent} from './wakeup-show-single/wakeup-show-single.component';
 import {RouterModule, Routes} from '@angular/router';
 import {WakeupDashboardComponent} from './wakeup-dashboard/wakeup-dashboard.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+
 
 const routes: Routes = [
   {path: 'showSingle', component: WakeupShowSingleComponent},
   {path: 'showDashboard', component: WakeupDashboardComponent},
+  {path: 'showPresets', component: WakeupShowPresetsComponent},
+  {path: 'settings', component: WakeupSettingsComponent},
+  { path: '',   redirectTo: '/showDashboard', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent},  // Page not found
 ];
 
 @NgModule({

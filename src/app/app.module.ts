@@ -18,6 +18,7 @@ import { WakeupShowPresetsComponent } from './wakeup-show-presets/wakeup-show-pr
 import { WakeupShowSingleComponent } from './wakeup-show-single/wakeup-show-single.component';
 import { AppRoutingModule } from './app-routing.module';
 import { WakeupDashboardComponent } from './wakeup-dashboard/wakeup-dashboard.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { WakeupDashboardComponent } from './wakeup-dashboard/wakeup-dashboard.co
     WakeupSettingsComponent,
     WakeupShowPresetsComponent,
     WakeupShowSingleComponent,
-    WakeupDashboardComponent
+    WakeupDashboardComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

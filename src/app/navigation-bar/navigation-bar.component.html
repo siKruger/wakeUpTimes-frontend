@@ -7,9 +7,9 @@
     <mat-nav-list>
       <!--- ITEMS GO HERE --->
       <a mat-list-item routerLink="/showDashboard">Übersicht</a>
-      <a mat-list-item href="#">Vorlagen</a>
+      <a mat-list-item routerLink="/showPresets">Vorlagen</a>
       <a mat-list-item routerLink="/showSingle">Einzelne Übersicht</a>
-      <a mat-list-item href="#">Einstellungen</a>
+      <a mat-list-item routerLink="/settings">Einstellungen</a>
       <!--- ITEMS GO HERE --->
     </mat-nav-list>
   </mat-sidenav>
@@ -26,6 +26,5 @@
       <span>Dashboard</span>
     </mat-toolbar>
     <router-outlet></router-outlet>
-    PLACEHOLDER -- Zeige aktuelle Zeiten an und schreib was nettes oder so --
   </mat-sidenav-content>
 </mat-sidenav-container>
