@@ -13,12 +13,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { HttpClientModule } from '@angular/common/http';
 import { WakeupSettingsComponent } from './wakeup-settings/wakeup-settings.component';
 import { WakeupShowPresetsComponent } from './wakeup-show-presets/wakeup-show-presets.component';
 import { WakeupShowSingleComponent } from './wakeup-show-single/wakeup-show-single.component';
 import { AppRoutingModule } from './app-routing.module';
 import { WakeupDashboardComponent } from './wakeup-dashboard/wakeup-dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

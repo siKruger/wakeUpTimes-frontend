@@ -1,1 +1,35 @@
-<p>wakeup-show-single works!</p>
+<div class="spacer">
+</div>
+
+
+<mat-card>
+  <mat-card-title
+    style="text-align: center"> Ü B E R S I C H T
+  </mat-card-title>
+  <mat-card-content>
+    <br>
+
+
+    <mat-grid-list cols="2" rowHeight="50px">
+      <mat-grid-tile colspan="2">
+        <mat-slide-toggle color="warn"> A K T I V I E R T</mat-slide-toggle>
+      </mat-grid-tile>
+      <mat-grid-tile>Montag</mat-grid-tile>
+      <mat-grid-tile>{{times.montag | date: "HH:MM"}}</mat-grid-tile>
+      <mat-grid-tile>Dienstag</mat-grid-tile>
+      <mat-grid-tile>{{times.dienstag | date: "HH:MM"}}</mat-grid-tile>
+      <mat-grid-tile>Mittwoch</mat-grid-tile>
+      <mat-grid-tile>{{times.mittwoch | date: "HH:MM"}}</mat-grid-tile>
+      <mat-grid-tile>Donnerstag</mat-grid-tile>
+      <mat-grid-tile>{{times.donnerstag | date: "HH:MM"}}</mat-grid-tile>
+      <mat-grid-tile>Freitag</mat-grid-tile>
+      <mat-grid-tile>{{times.freitag | date: "HH:MM"}}</mat-grid-tile>
+      <mat-grid-tile>Samstag</mat-grid-tile>
+      <mat-grid-tile>{{times.samstag | date: "HH:MM"}}</mat-grid-tile>
+      <mat-grid-tile>Sonntag</mat-grid-tile>
+      <mat-grid-tile>{{times.sonntag | date: "HH:MM"}}</mat-grid-tile>
+    </mat-grid-list>
+
+
+  </mat-card-content>
+</mat-card>
