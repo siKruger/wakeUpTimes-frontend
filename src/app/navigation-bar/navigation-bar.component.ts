@@ -16,6 +16,9 @@ export class NavigationBarComponent {
       shareReplay()
     );
 
+  public showCurrently = 'Dashboard';
+
+
   constructor(private breakpointObserver: BreakpointObserver) {}
 
 }

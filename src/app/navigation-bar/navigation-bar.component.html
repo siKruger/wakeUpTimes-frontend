@@ -6,10 +6,10 @@
     <mat-toolbar>Navigation</mat-toolbar>
     <mat-nav-list>
       <!--- ITEMS GO HERE --->
-      <a mat-list-item routerLink="/showDashboard">Übersicht</a>
-      <a mat-list-item routerLink="/showPresets">Vorlagen</a>
-      <a mat-list-item routerLink="/showSingle">Einzelne Übersicht</a>
-      <a mat-list-item routerLink="/settings">Einstellungen</a>
+      <a (click)="showCurrently = 'Dashboard'" mat-list-item routerLink="/showDashboard">Übersicht</a>
+      <a (click)="showCurrently = 'Presets'"mat-list-item routerLink="/showPresets">Vorlagen</a>
+      <a (click)="showCurrently = 'Einzelne Zeiten'"mat-list-item routerLink="/showSingle">Einzelne Übersicht</a>
+      <a (click)="showCurrently = 'Einstellungen'"mat-list-item routerLink="/settings">Einstellungen</a>
       <!--- ITEMS GO HERE --->
     </mat-nav-list>
   </mat-sidenav>
@@ -23,7 +23,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Dashboard</span>
+      <span>{{showCurrently}}</span>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
